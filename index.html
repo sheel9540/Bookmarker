@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Save'em Bookmarks</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+
+
+</head>
+<body onload="fetchBm()">
+  <div class="container center">
+      <div class="card post">
+          <div class="card-content">
+            <form id="myForm">
+              <h3 class="center blue lighten-3"> Enter the bookmark details here</h3>
+              <h5 class="left">Name</h5>
+              <input id="inpName" type="text" placeholder="Enter the name for bookmark">
+              <h5 class="left">URL</h5>
+              <input id="inpUrl" type="url" placeholder="Enter the URL of bookmark">
+              <button class="btn-large light-green accent-3"type="submit">Add Bookmark</button>
+            </form>
+          </div>
+      </div>
+      <div class="card post">
+        <div id="out" class="card-content">
+          <h3 class="center purple accent-2">Saved Bookmarks</h3>
+          <div id="results" class="card-content"></div>
+        </div>
+      </div>
+  </div>
+  <script src="./js/app.js"></script>
+
+</body>
+
+
+</html>
